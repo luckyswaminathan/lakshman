@@ -1,101 +1,188 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Github, ExternalLink, Mail } from 'lucide-react'
+import Link from "next/link"
+import Image from "next/image"
+import "./styles/animations.css"
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="container px-4 py-24 mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
+            <div className="relative group animate-bounce-spin">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary-foreground rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+              <Image
+                src="/placeholder.svg?height=200&width=200"
+                alt="Profile"
+                width={200}
+                height={200}
+                className="relative rounded-full object-cover border-2 border-primary"
+              />
+            </div>
+            <div className="space-y-4 text-center md:text-left">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl animate-glitch">
+                Hey, I'm Lakshman Swaminathan
+              </h1>
+              <p className="text-xl text-muted-foreground animate-jelly">
+                I'm a software engineer and entrepreneur passionate about building products that make a difference. 
+                Currently working on revolutionizing how people interact with technology.
+              </p>
+              <div className="flex gap-4 justify-center md:justify-start">
+                <Button asChild className="animate-wiggle">
+                  <Link href="mailto:your@email.com">
+                    <Mail className="w-4 h-4 mr-2" />
+                    Contact
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild className="animate-wiggle">
+                  <Link href="https://github.com/yourusername" target="_blank">
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Experience Section */}
+      <section className="container px-4 py-24 mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="text-3xl font-bold tracking-tight animate-glitch">Experience</h2>
+          <div className="space-y-6">
+            <ExperienceCard
+              title="Cofounder"
+              company="trymime.ai"
+              period="2023 - Present"
+              description="Building the future of AI-powered communication"
+            />
+            <ExperienceCard
+              title="Cofounder"
+              company="Cabrium.ai"
+              period="2023 - Present"
+              description="Developing innovative AI solutions for businesses"
+            />
+            <ExperienceCard
+              title="Software Engineering Intern"
+              company="Google"
+              period="Summer 2023"
+              description="Worked on large-scale distributed systems and infrastructure"
+            />
+            <ExperienceCard
+              title="Software Engineering Intern"
+              company="Anchorage Digital"
+              period="Summer 2022"
+              description="Developed secure cryptocurrency infrastructure and trading systems"
+            />
+            <ExperienceCard
+              title="Software Engineering Intern"
+              company="Koolio.ai"
+              period="Summer 2021"
+              description="Built AI-powered features and improved user experience"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="container px-4 py-24 mx-auto">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h2 className="text-3xl font-bold tracking-tight animate-glitch">Projects</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <ProjectCard
+              title="Google 2.0"
+              description="A modern reimagining of the search engine with AI-powered features"
+              link="https://github.com/yourusername/google2"
+            />
+            <ProjectCard
+              title="MusicVibe"
+              description="AI-powered music recommendation system based on user emotions"
+              link="https://github.com/yourusername/musicvibe"
+            />
+            <ProjectCard
+              title="EleXion"
+              description="Blockchain-based voting platform for secure digital elections"
+              link="https://github.com/yourusername/elexion"
+            />
+            <ProjectCard
+              title="RallyRow"
+              description="Social platform for organizing and discovering local events"
+              link="https://github.com/yourusername/rallyrow"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="container px-4 py-12 mx-auto">
+        <div className="max-w-3xl mx-auto text-center text-muted-foreground animate-jelly">
+          <p>© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+        </div>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
+
+function ExperienceCard({
+  title,
+  company,
+  period,
+  description,
+}: {
+  title: string
+  company: string
+  period: string
+  description: string
+}) {
+  return (
+    <Card className="transform transition-all duration-300 hover:scale-105 hover:rotate-1 animate-jelly">
+      <CardContent className="p-6">
+        <div className="space-y-2">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="font-semibold">{title}</h3>
+              <p className="text-sm text-muted-foreground">{company}</p>
+            </div>
+            <span className="text-sm text-muted-foreground">{period}</span>
+          </div>
+          <p className="text-sm text-muted-foreground">{description}</p>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
+function ProjectCard({
+  title,
+  description,
+  link,
+}: {
+  title: string
+  description: string
+  link: string
+}) {
+  return (
+    <Card className="group transition-all hover:shadow-lg animate-bounce-spin">
+      <CardContent className="p-6">
+        <div className="space-y-2">
+          <div className="flex items-start justify-between">
+            <h3 className="font-semibold">{title}</h3>
+            <Link 
+              href={link} 
+              target="_blank"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <ExternalLink className="w-4 h-4 animate-wiggle" />
+            </Link>
+          </div>
+          <p className="text-sm text-muted-foreground">{description}</p>
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
