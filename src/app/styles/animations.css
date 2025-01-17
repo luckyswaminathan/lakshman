@@ -40,4 +40,30 @@
   .animate-glitch:hover {
     animation: glitch 0.3s ease-in-out;
   }
+
+  @keyframes rocket-flight {
+    0% {
+      transform: translateX(-50px);
+    }
+    50% {
+      transform: translate(calc(50vw - 25px), var(--arc-height));
+    }
+    100% {
+      transform: translateX(calc(100vw + 50px));
+    }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+  }
+  
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+  
+  .rocket {
+    will-change: transform;
+  }
+  
   

@@ -1,0 +1,86 @@
+/* Create multiple starting positions */
+@keyframes rocket-ltr-1 {
+    0% {
+      left: -50px;
+      top: 10%;
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: translateY(calc(var(--arc-height) / 2)) rotate(45deg);
+      top: 5%;
+    }
+    100% {
+      left: calc(100% + 50px);
+      top: 10%;
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes rocket-ltr-2 {
+    0% {
+      left: -50px;
+      top: 30%;
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: translateY(calc(var(--arc-height) / 2)) rotate(45deg);
+      top: 25%;
+    }
+    100% {
+      left: calc(100% + 50px);
+      top: 30%;
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes rocket-ltr-3 {
+    0% {
+      left: -50px;
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: translateY(calc(var(--arc-height) / 2)) rotate(45deg);
+      top: 45%;
+    }
+    100% {
+      left: calc(100% + 50px);
+      top: 50%;
+      transform: rotate(45deg);
+    }
+  }
+  
+  @keyframes rocket-ltr-4 {
+    0% {
+      left: -50px;
+      top: 70%;
+      transform: rotate(45deg);
+    }
+    50% {
+      transform: translateY(calc(var(--arc-height) / 2)) rotate(45deg);
+      top: 65%;
+    }
+    100% {
+      left: calc(100% + 50px);
+      top: 70%;
+      transform: rotate(45deg);
+    }
+  }
+  
+  /* Same pattern for right-to-left */
+  @keyframes rocket-rtl-1 {
+    0% {
+      right: -50px;
+      top: 10%;
+      transform: rotate(-135deg);
+    }
+    50% {
+      transform: translateY(calc(var(--arc-height) / 2)) rotate(-135deg);
+      top: 5%;
+    }
+    100% {
+      right: calc(100% + 50px);
+      top: 10%;
+      transform: rotate(-135deg);
+    }
+  }
