@@ -4,7 +4,7 @@ import { StarsBackground } from "@/components/stars-background"
 import { Rockets } from "@/components/rockets"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useCallback } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import cdmx1 from "@/lib/images/mexico-city/cdmx1.png"
 import cdmx2 from "@/lib/images/mexico-city/cdmx2.png"
@@ -93,22 +93,22 @@ const locations: Location[] = [
 function LocationCard({ location }: { location: Location }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImageIndex((prev) => 
       prev === location.images.length - 1 ? 0 : prev + 1
     )
-  }
+  }, [location.images.length])
 
-  const previousImage = () => {
+  const previousImage = useCallback(() => {
     setCurrentImageIndex((prev) => 
       prev === 0 ? location.images.length - 1 : prev - 1
     )
-  }
+  }, [location.images.length])
 
   useEffect(() => {
-    const interval = setInterval(nextImage, 5000) // Auto-advance every 5 seconds
+    const interval = setInterval(nextImage, 5000)
     return () => clearInterval(interval)
-  }, [])
+  }, [nextImage])
 
   return (
     <Card className="group overflow-hidden">

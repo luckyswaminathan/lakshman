@@ -40,10 +40,10 @@ export default function Page() {
             </div>
             <div className="space-y-4 text-center md:text-left">
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl animate-glitch">
-                Hey, I'm Lakshman (Lucky) Swaminathan
+                Hey, I&apos;m Lakshman (Lucky) Swaminathan
               </h1>
               <p className="text-sm text-muted-foreground animate-jelly md:text-base">
-                I'm a student at the University of Pennsylvania studying CS. I love building things that people want, currently trying to solve backend testing with AI.
+                I&apos;m a student at the University of Pennsylvania studying CS. I love building things that people want, currently trying to solve backend testing with AI.
                 Love to build anything, please hit me up for any reason!
               </p>
               <div className="flex gap-4 justify-center md:justify-start">
