@@ -72,18 +72,6 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Contact */}
-      <div className="mt-16 opacity-0 animate-fade-in-3">
-        <p className="text-sm text-zinc-500">
-          Get in touch:{" "}
-          <a
-            href="mailto:lswamina@sas.upenn.edu"
-            className="border-b border-dashed border-zinc-400 hover:text-zinc-900 transition-colors"
-          >
-            lswamina@sas.upenn.edu
-          </a>
-        </p>
-      </div>
 
       {/* Footer Navigation */}
       <footer className="mt-8 md:mt-12 opacity-0 animate-fade-in-3">
