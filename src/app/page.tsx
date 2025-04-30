@@ -41,7 +41,7 @@ export default function Home() {
             >
               twitter(X)
             </a>{" "}
-            — I'm always open to interesting conversations and learning more about anything.
+            — I&apos;m always open to interesting conversations and learning more about anything.
           </p>
           <p>
             Rising Senior @ UPenn studying CS
