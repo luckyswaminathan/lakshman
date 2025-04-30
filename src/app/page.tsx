@@ -1,9 +1,5 @@
-import { Metadata } from "next"
 import Link from "next/link"
-export const metadata: Metadata = {
-  title: "lakshmanswaminathan.com",
-  description: "lakshman swaminathan's website",
-}
+
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-white px-6 py-12 md:px-12 max-w-4xl mx-auto">
