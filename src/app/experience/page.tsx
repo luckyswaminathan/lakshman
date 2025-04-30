@@ -78,7 +78,7 @@ export default function Experience() {
           </Link>
           <a
             className="hover:text-zinc-900 transition-colors"
-            href="https://x.com/luckswaminatha"
+            href="https://x.com/luckswaminathan"
             target="_blank"
             rel="noopener noreferrer"
           >
