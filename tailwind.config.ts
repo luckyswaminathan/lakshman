@@ -9,6 +9,25 @@ export default {
   ],
   theme: {
   	extend: {
+      keyframes: {
+        'fade-in-1': {
+          '0%, 20%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        'fade-in-2': {
+          '0%, 40%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        },
+        'fade-in-3': {
+          '0%, 60%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' }
+        }
+      },
+      animation: {
+        'fade-in-1': 'fade-in-1 1.5s ease-out forwards',
+        'fade-in-2': 'fade-in-2 1.5s ease-out forwards',
+        'fade-in-3': 'fade-in-3 1.5s ease-out forwards'
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
