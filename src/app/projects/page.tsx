@@ -103,7 +103,7 @@ export default function Projects() {
           </a>
           <a
             className="hover:text-zinc-900 transition-colors"
-            href="https://github.com/lswamina"
+            href="https://github.com/luckyswaminathan"
             target="_blank"
             rel="noopener noreferrer"
           >
