@@ -44,10 +44,10 @@ export default function Home() {
             — I&apos;m always open to interesting conversations and learning more about anything.
           </p>
           <p>
-            Rising Senior @ UPenn studying CS
+            Senior @ UPenn studying CS
           </p>
           <p className="mt-4">
-            Current obsessions: MCP-API interactions, Guitar, Photography, hardware systems, C
+            Current obsessions: MCP-API interactions, Guitar, Photography, hardware systems, C, looking for new projects
           </p>
         </div>
       </section>

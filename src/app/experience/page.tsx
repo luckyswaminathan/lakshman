@@ -17,9 +17,9 @@ export default function Experience() {
           <div className="space-y-4">
             <div className="flex justify-between items-baseline">
               <h2 className="text-lg font-medium text-zinc-900">Google</h2>
-              <span className="text-sm text-zinc-500">May 2025</span>
+              <span className="text-sm text-zinc-500">May 2025 - August 2025</span>
             </div>
-            <p className="text-zinc-600 italic">Incoming Software Engineering Intern (GCP Terraform) | Seattle, WA</p>
+            <p className="text-zinc-600 italic">Software Engineering Intern (GCP Terraform) | Seattle, WA</p>
           </div>
 
           {/* Mime */}
