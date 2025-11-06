@@ -47,7 +47,7 @@ export default function Home() {
             Senior @ UPenn studying CS
           </p>
           <p className="mt-4">
-            Current obsessions: MCP-API interactions, Guitar, Photography, hardware systems, C, looking for new projects
+            Current obsessions: MCP-API interactions, Guitar, Photography, Simulation
           </p>
         </div>
       </section>

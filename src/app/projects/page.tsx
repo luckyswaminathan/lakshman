@@ -16,9 +16,24 @@ export default function Projects() {
         </h1>
       </header>
       {/* Main Content */}
+
+      
       <section className="flex-grow opacity-0 animate-fade-in-2">
         <div className="space-y-12 text-zinc-700 leading-relaxed">
-        <div className="space-y-4">
+          {/* deepmock API */}
+          <div className="space-y-4">
+            <div className="flex justify-between items-baseline">
+              <h2 className="text-lg font-medium text-zinc-900">deepmock API</h2>
+              <span className="text-sm text-zinc-500">Present</span>
+            </div>
+            <p className="text-zinc-600 italic">API Mocking Library</p>
+            <ul className="list-disc list-outside ml-4 space-y-2">
+              <li>Library for uploading an API spec and outputting a live deepmocked API with CRUD functionality for the API</li>
+            </ul>
+          </div>
+
+          {/* PennOS */}
+          <div className="space-y-4">
             <div className="flex justify-between items-baseline">
               <h2 className="text-lg font-medium text-zinc-900">PennOS</h2>
               <span className="text-sm text-zinc-500">April 2025</span>
