@@ -13,14 +13,7 @@ export default function Experience() {
       {/* Main Content */}
       <section className="flex-grow opacity-0 animate-fade-in-2">
         <div className="space-y-12 text-zinc-700 leading-relaxed">
-          {/* Applied Intuition */}
-          <div className="space-y-4">
-            <div className="flex justify-between items-baseline">
-              <h2 className="text-lg font-medium text-zinc-900">Applied Intuition</h2>
-              <span className="text-sm text-zinc-500">August 2026</span>
-            </div>
-            <p className="text-zinc-600 italic">Incoming | Mountain View, CA</p>
-          </div>
+          
 
           {/* Google */}
           <div className="space-y-4">
